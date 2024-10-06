@@ -4,6 +4,7 @@ namespace Ch04Ex1MovieList.Models
 {
     public class MovieContext : DbContext
     {
+
         public MovieContext(DbContextOptions<MovieContext> options)
             : base(options) 
         { }

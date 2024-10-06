@@ -7,7 +7,7 @@ namespace Ch04Ex1MovieList.Models
         public int MovieId { get; set; }
 
         [Required(ErrorMessage = "Please enter a name.")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [Required(ErrorMessage = "Please enter a year.")]
         [Range(1889, 2999, ErrorMessage = "Year must be after 1889.")]
