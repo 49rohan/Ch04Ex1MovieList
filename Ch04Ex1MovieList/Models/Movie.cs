@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Ch04Ex1MovieList.Views.Movie;
+using System.ComponentModel.DataAnnotations;
 
 namespace Ch04Ex1MovieList.Models
 {
@@ -16,5 +17,9 @@ namespace Ch04Ex1MovieList.Models
         [Required(ErrorMessage = "Please enter a rating.")]
         [Range(1, 5, ErrorMessage = "Rating must be between 1 and 5.")]
         public int? Rating { get; set; }
+
+        [Required(ErrorMessage = "Please enter a genre.")]
+        public string GenreId { get; set; }
+        public Genre Genre { get; set; }
     }
 }
